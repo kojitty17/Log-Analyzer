@@ -14,7 +14,7 @@ def read_log_file(path: str):
             line = line.rstrip("\n")
             print(line)
 def main():
-    sample_path = Path(__file__).parent.parent / "SampleLogs" / "example.log"
+    sample_path = Path(__file__).parent / "SampleLogs" / "example.log"
     print(f"[+] Reading: {sample_path}")
     read_log_file(str(sample_path))
 
